@@ -1,6 +1,6 @@
 {
   "name": "gdc-web-component",
-  "version": "0.0.6",
+  "version": "0.0.5",
   "description": "A component store",
   "license": "MIT",
   "module": "dist/index.js",
@@ -21,28 +21,6 @@
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "start": "npm run dev"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "*.{md,json}": [
-      "prettier --write --no-error-on-unmatched-pattern"
-    ],
-    "*.{css,less}": [
-      "stylelint --fix",
-      "prettier --write"
-    ],
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --parser=typescript --write"
-    ]
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",

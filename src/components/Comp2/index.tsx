@@ -1,7 +1,5 @@
 import React, { type FC } from 'react';
+const Comp = (props: {  title: string  }) => <>{props.title}</>;
+export default Comp;
 
-const Comp: FC<{ title: string }> = (props) => <>{props.title}</>;
-
-// export default Comp;
-
-export default (props) => <>{props.title}</>
+// export default (props:any) => <>{props.title}</>
